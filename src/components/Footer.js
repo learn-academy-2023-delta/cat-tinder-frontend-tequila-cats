@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <Footer>
+      <footer>
         <p>&copy; 2023 Cat Tinder | Jesus and Miguel</p>
-      </Footer>
+      </footer>
     </>
   )
 }
