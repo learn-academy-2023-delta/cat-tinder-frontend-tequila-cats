@@ -10,7 +10,6 @@ describe("<Footer />", () => {
             <Footer/>
         </BrowserRouter>
         )
-        // screen.logTestingPlaygroundURL()
         const footer = screen.getByText(/© 2023 cat tinder \| jesus and miguel/i)
         expect(footer).toBeInTheDocument()
     })

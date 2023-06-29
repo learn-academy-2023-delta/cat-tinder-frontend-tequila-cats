@@ -1,18 +1,16 @@
 
 import {render, screen} from "@testing-library/react" 
 import  {BrowserRouter} from "react-router-dom"
-// import userEvent from "@testing-library/user-event"
 import Header from "../components/Header"
 
 describe("<Header />", () => {
-    it("it has a cat link", () => {
+    it("it has a Cat link", () => {
         render(
         <BrowserRouter>
             <Header />
         </BrowserRouter>
         )
-        // screen.logTestingPlaygroundURL()
-        const link = screen.getByText('Cat')
+        const link = screen.getByText("Cat")
         expect(link).toBeInTheDocument()
     })
 
@@ -22,8 +20,7 @@ describe("<Header />", () => {
             <Header />
         </BrowserRouter>
         )
-        // screen.logTestingPlaygroundURL()
-        const newCat = screen.getByText('Add New Cat')
+        const newCat = screen.getByText(/Add New Cat/i)
         expect(newCat).toBeInTheDocument()
     })
 
@@ -33,8 +30,7 @@ describe("<Header />", () => {
             <Header />
         </BrowserRouter>
         )
-        // screen.logTestingPlaygroundURL()
-        const sponsorCat = screen.getByText('Sponsor a cat')
+        const sponsorCat = screen.getByText(/Sponsor a cat/i)
         expect(sponsorCat).toBeInTheDocument()
     })
 })
