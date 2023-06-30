@@ -3,9 +3,10 @@ import {Nav, NavItem, NavLink} from 'reactstrap'
 const Header = () => {
   return (
     <>
+    <div className='header'>
       <Nav fill pills>
         <NavItem>
-          <NavLink active href="#">
+          <NavLink active href="#" className='nav-header'>
             Cat
           </NavLink>
         </NavItem>
@@ -22,6 +23,7 @@ const Header = () => {
           </NavLink>
         </NavItem>
       </Nav>
+    </div>
     </>
   )
 }
