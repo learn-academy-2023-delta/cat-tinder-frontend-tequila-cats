@@ -23,7 +23,7 @@ const handleSubmit = () => {
 }
   return (
     <>
-    <h2 className='new-cat-page'>Create your CAT-vatar!!</h2>
+    <h2 className='new-cat-page'>Join The Family</h2>
     <div className='cat-form'>
     <Form>
       <FormGroup>
@@ -34,6 +34,7 @@ const handleSubmit = () => {
         placeholder="What is your cat's name?"
         onChange={handleChange}
         value={newCat.name}
+        
         />
       </FormGroup>
       <FormGroup>
